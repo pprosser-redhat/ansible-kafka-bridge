@@ -1,10 +1,11 @@
-## Usage
+Usage
 
-* create an application.properties file in the following format:
+create an application.properties file in the following format:
 
-```properties
+properties
+    
     messaging.broker.url=<<<bootstrap url>>>>
-``
+
 
 oc create configmap tower-bridge-config --from-file=application.properties
 

@@ -1,0 +1,12 @@
+openapi: 3.0.2
+info:
+    title: tower-bridge
+    version: 1.0.0
+paths:
+    /process:
+        post:
+            responses:
+                '200':
+                    description: Sucess processed and sent to Kafka
+            operationId: process
+            summary: Publish a Tower Notifcation

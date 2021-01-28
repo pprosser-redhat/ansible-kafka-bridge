@@ -1,0 +1,4 @@
+tower-bridge-reader/.dockerignore
+.vscode/settings.json
+tower-bridge-reader/.mvn
+application.properties

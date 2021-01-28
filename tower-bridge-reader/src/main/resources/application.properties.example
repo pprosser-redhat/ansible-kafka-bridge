@@ -1,0 +1,11 @@
+# Configure the SmallRye Kafka connector
+%dev.kafka.bootstrap.servers=
+%prod.kafka.bootstrap.servers=
+# Configure the Kafka source (we read from it)
+mp.messaging.incoming.ansible-message.connector=smallrye-kafka
+mp.messaging.incoming.ansible-message.value.deserializer=org.apache.kafka.common.serialization.StringDeserializer
+mp.messaging.incoming.ansible-message.broadcast=true
+mp.messaging.incoming.ansible-message.auto.offset.reset=earliest
+mp.messaging.incoming.ansible-message.enable.auto.commit=true
+quarkus.openshift.expose=true
+quarkus.kubernetes-client.trust-certs=true
